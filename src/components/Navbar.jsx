@@ -1,8 +1,19 @@
-import { useContext } from "react";
+import { useContext, useRef } from "react";
 import { UiContext } from "../state/UiContextValue";
 
 export default function Navbar() {
   const { t, lang, setLang, theme, setTheme } = useContext(UiContext);
+  const navRef = useRef(null);
+  const togglerRef = useRef(null);
+
+  const closeMobileNav = () => {
+    if (!navRef.current || !togglerRef.current) return;
+    const isExpanded = navRef.current.classList.contains("show");
+    const isMobile = window.getComputedStyle(togglerRef.current).display !== "none";
+    if (isExpanded && isMobile) {
+      togglerRef.current.click();
+    }
+  };
 
   const navItems = [
     { id: "home", label: t.nav.home },
@@ -31,16 +42,17 @@ export default function Navbar() {
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navMain"
+          ref={togglerRef}
         >
           <span className="navbar-toggler-icon"></span>
         </button>
 
         {/* Menu */}
-        <div className="collapse navbar-collapse" id="navMain">
+        <div className="collapse navbar-collapse" id="navMain" ref={navRef}>
           <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
             {navItems.map((item) => (
               <li className="nav-item" key={item.id}>
-                <a className="nav-link nav-anim px-lg-3" href={`#${item.id}`}>
+                <a className="nav-link nav-anim px-lg-3" href={`#${item.id}`} onClick={closeMobileNav}>
                   {item.label}
                 </a>
               </li>
@@ -69,7 +81,7 @@ export default function Navbar() {
             </button>
 
             {/* CTA */}
-            <a className="btn btn-warning btn-pill shadow-soft btn-book" href="#contact">
+            <a className="btn btn-warning btn-pill shadow-soft btn-book" href="#contact" onClick={closeMobileNav}>
               {t.nav.book}
             </a>
           </div>

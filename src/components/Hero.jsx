@@ -84,7 +84,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="hero-card text-white">
+        <div className="hero-card text-white w-80">
           <div className="hero-card-badge">{t.hero.hoursTitle}</div>
           <h4 className="fw-bold mt-3">{t.hero.card.title}</h4>
           <p className="text-white-50">{t.hero.card.sub}</p>

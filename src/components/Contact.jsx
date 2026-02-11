@@ -256,14 +256,7 @@ export default function Contact() {
                     >
                       <i className="bi bi-whatsapp me-2"></i> {t.contact.whatsapp}
                     </a>
-                    <a
-                      className="btn btn-outline-success btn-lg btn-pill flex-fill"
-                      href="https://wa.me/201153629690"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <i className="bi bi-whatsapp me-2"></i> {t.contact.whatsapp}
-                    </a>
+                  
                   </div>
                 </form>
               </div>
