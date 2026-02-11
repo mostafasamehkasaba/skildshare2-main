@@ -9,7 +9,7 @@
       drinks: "Cafe Menu",
       blog: "Blog",
       events: "Events",
-      contact: "Cancel",
+      contact: "Contact",
       book: "Book Now",
     },
     hero: {
@@ -240,7 +240,7 @@
       phone: "الهاتف",
       notes: "ملاحظات",
       submit: "إرسال",
-      contact: "إلغاء",
+      contact: "تواصل",
       mostPopular: "الأكثر طلبًا",
     },
     offers: {
