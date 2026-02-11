@@ -96,6 +96,8 @@
       email: "Enter your email",
       subscribe: "Subscribe",
       readMore: "Read More",
+      back: "Back to Blog",
+      notFound: "Article not found.",
     },
     events: {
       title: "Events & Community",
@@ -258,6 +260,8 @@
       email: "اكتب بريدك الإلكتروني",
       subscribe: "اشترك",
       readMore: "اقرأ المزيد",
+      back: "العودة للمقالات",
+      notFound: "المقال غير موجود.",
     },
     events: {
       title: "فعاليات المجتمع",

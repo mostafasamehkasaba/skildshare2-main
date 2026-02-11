@@ -196,6 +196,18 @@ export const posts = [
     date: { en: "Jan 18, 2026", ar: "18 يناير 2026" },
     read: { en: "6 min read", ar: "قراءة 6 دقائق" },
     img: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1400&q=80",
+    body: {
+      en: [
+        "Remote work is shifting from a perk to a default. Hybrid policies, async collaboration, and outcome-based metrics are now common across modern teams.",
+        "High-performing remote teams invest in clear documentation, fewer meetings, and predictable check-ins. They design their week around deep focus blocks.",
+        "Coworking spaces fill the gaps with reliable internet, ergonomic setups, and a real community, making remote work sustainable over the long term.",
+      ],
+      ar: [
+        "العمل عن بُعد لم يعد ميزة إضافية فقط، بل أصبح أسلوب عمل أساسي. السياسات الهجينة والتعاون غير المتزامن وقياس النتائج أصبحت شائعة.",
+        "الفرق الناجحة عن بُعد تعتمد على توثيق واضح واجتماعات أقل ومواعيد متابعة منتظمة، مع تنظيم الأسبوع حول فترات تركيز عميق.",
+        "مساحات العمل المشتركة تسد الفجوة بإنترنت قوي وتجهيزات مريحة ومجتمع داعم يجعل العمل عن بُعد أكثر استدامة.",
+      ],
+    },
   },
   {
     cat: { en: "Productivity", ar: "الإنتاجية" },
@@ -203,6 +215,18 @@ export const posts = [
     date: { en: "Jan 12, 2026", ar: "12 يناير 2026" },
     read: { en: "5 min read", ar: "قراءة 5 دقائق" },
     img: "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1400&q=80",
+    body: {
+      en: [
+        "Start with small, measurable goals. A short list you can finish beats a long list you won't.",
+        "Protect two deep-focus blocks each day and keep shallow tasks for a dedicated window.",
+        "Review your week every Friday: keep what worked, remove what didn’t, and plan the next steps.",
+      ],
+      ar: [
+        "ابدأ بأهداف صغيرة قابلة للقياس. قائمة قصيرة تُنجزها أفضل من قائمة طويلة لا تنتهي.",
+        "احمِ فترتين للعمل العميق يوميًا، واجعل المهام السريعة في وقت محدد لها.",
+        "راجع أسبوعك كل يوم جمعة: احتفظ بما نجح، وتخلّص مما لم ينفع، وحدد خطوات الأسبوع القادم.",
+      ],
+    },
   },
   {
     cat: { en: "Entrepreneurship", ar: "ريادة الأعمال" },
@@ -210,6 +234,18 @@ export const posts = [
     date: { en: "Jan 06, 2026", ar: "6 يناير 2026" },
     read: { en: "7 min read", ar: "قراءة 7 دقائق" },
     img: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1400&q=80",
+    body: {
+      en: [
+        "Start with a real problem and validate fast. Talk to customers before building anything complex.",
+        "Keep your first version lean: one core feature, a clear price, and a simple onboarding flow.",
+        "Leverage local communities, coworking hubs, and events to find mentors, early users, and partners.",
+      ],
+      ar: [
+        "ابدأ بمشكلة حقيقية وتحقق منها بسرعة. تحدّث مع العملاء قبل بناء أي شيء معقّد.",
+        "اجعل النسخة الأولى بسيطة: ميزة واحدة أساسية، سعر واضح، وتجربة استخدام سهلة.",
+        "استفد من المجتمعات المحلية ومساحات العمل والفعاليات للعثور على مرشدين ومستخدمين مبكرين وشركاء.",
+      ],
+    },
   },
 ];
 

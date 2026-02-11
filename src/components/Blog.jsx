@@ -6,6 +6,7 @@ import { UiContext } from "../state/UiContextValue";
 export default function Blog() {
   const ref = useReveal();
   const { t, lang } = useContext(UiContext);
+  const baseUrl = import.meta.env.BASE_URL || "/";
 
   return (
     <section id="blog" className="section-pad bg-soft">
@@ -36,7 +37,12 @@ export default function Blog() {
                       {p.read[lang]}
                     </span>
                   </div>
-                  <a className="btn btn-link btn-readmore mt-2" href="#blog">
+                  <a
+                    className="btn btn-link btn-readmore mt-2"
+                    href={`${baseUrl}?article=${i}`}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     {t.blog.readMore} <i className="bi bi-arrow-right"></i>
                   </a>
                 </div>
